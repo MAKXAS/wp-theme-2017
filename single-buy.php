@@ -76,12 +76,12 @@
       <div class="hikaku-section hikaku-section2">
   <table class="hide-for-small-only">
   <tbody>
-    <?php if($dt_goods_section_1){;?>
+    <?php if($dt_goods_section_1):?>
   <tr>
              <th class="pk-th">買取金額</th>
              <td class="pk-td"><?php echo number_format($dt_goods_section_1);?>円</td>
            </tr>
-           <?php;}?>
+           <?php endif; ?>
   <tr>
              <th><span class="another-company">カテゴリ・ジャンル</span></th>
              <td><?php echo $term_name;
