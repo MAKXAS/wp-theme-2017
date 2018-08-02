@@ -87,60 +87,60 @@
              <td><?php echo $term_name;
 ?></td>
            </tr>
-           <?php if($dt_goods_section_3){;?>
+           <?php if($dt_goods_section_3):?>
            <tr>
              <th>メーカー</th>
              <td><?php if($dt_goods_section_3){echo $dt_goods_section_3;}?></td>
            </tr>
-           <?php;}?>
-           <?php if($dt_goods_section_4){;?>
+           <?php endif; ?>
+           <?php if($dt_goods_section_4):?>
            <tr>
              <th>モデル</th>
              <td><?php if($dt_goods_section_4){echo $dt_goods_section_4;}?></td>
            </tr>
-           <?php;}?>
-           <?php if($dt_goods_section_5){;?>
+           <?php endif; ?>
+           <?php if($dt_goods_section_5):?>
            <tr>
              <th>特徴</th>
              <td><?php if($dt_goods_section_5){echo $dt_goods_section_5;}?></td>
            </tr>
-           <?php;}?>
-           <?php if($dt_goods_section_6){;?>
+           <?php endif; ?>
+           <?php if($dt_goods_section_6): ?>
            <tr>
              <th>状態</th>
              <td><?php if($dt_goods_section_6){echo $dt_goods_section_6;}?></td>
            </tr>
-           <?php;}?>
-           <?php if($dt_goods_section_7){;?>
+           <?php endif; ?>
+           <?php if($dt_goods_section_7): ?>
            <tr>
              <th>買取方法</th>
              <td><?php if($dt_goods_section_7){echo $dt_goods_section_7;}?></td>
            </tr>
-           <?php;}?>
-           <?php if($dt_goods_section_8){;?>
+           <?php endif; ?>
+           <?php if($dt_goods_section_8): ?>
            <tr>
              <th>地域名</th>
              <td><?php if($dt_goods_section_8){echo $dt_goods_section_8;}?></td>
            </tr>
-           <?php;}?>
-           <?php if($dt_goods_section_9){;?>
+           <?php endif; ?>
+           <?php if($dt_goods_section_9): ?>
            <tr>
              <th>商品紹介</th>
              <td class="textLeft"><?php if($dt_goods_section_9){echo $dt_goods_section_9;}?></td>
            </tr>
-           <?php;}?>
+           <?php endif; ?>
          </tbody></table>
 <table class="show-for-small-only sp">
   <tbody>
   <tr>
              <th class="pk-th">買取金額</th>
            </tr>
-           <?php if($dt_goods_section_1){;?>
+           <?php if($dt_goods_section_1): ?>
 
            <tr>
              <td class="pk-td"><?php if($dt_goods_section_1){echo number_format($dt_goods_section_1);}?>円</td>
            </tr>
-                      <?php;}?>
+                      <?php endif; ?>
 
   <tr>
              <th><span class="another-company">カテゴリ・ジャンル</span></th>
