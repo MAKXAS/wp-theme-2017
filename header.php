@@ -53,15 +53,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$pageId = $cat->slug;
 		$pageClass = 'no2';
 
-	elseif(is_single())://記事ページのとき
-		$cat = get_the_category();
-		$cat = $cat[0];
-		$pageId = $cat->category_nicename;
-    if (get_post_type() === 'area_type'):
-		$pageClass = 'area no2';
+    elseif(is_single())://記事ページのとき
+      $cat = get_the_category();
+      $cat = $cat[0];
+      $pageId = $cat->category_nicename;
+      if (get_post_type() === 'area_type'):
+        $pageClass = 'area no2';
+      else:
+        $pageClass = 'green no2';
+      endif;
     else:
-    $pageClass = 'green no2';
-	endif;endif;
+      $pageId = '';
+      $pageClass = '';
+    endif;
 ?>
 <body id="<?php echo $pageId;?>" class="<?php echo $pageClass ?><?php if(!is_front_page()) echo ' sub_page';?>">
 <!-- Google Tag Manager (noscript) -->
